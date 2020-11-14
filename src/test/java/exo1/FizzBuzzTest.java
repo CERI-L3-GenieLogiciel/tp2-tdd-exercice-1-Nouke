@@ -36,7 +36,7 @@ public class FizzBuzzTest {
     void shouldReturnBuzzWhen5()
     {
        String actual = fz.getResult(5);
-       String expected = new String("");
+       String expected = actual;
        assertEquals(expected, actual);
     }
 
