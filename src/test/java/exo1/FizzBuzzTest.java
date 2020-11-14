@@ -26,5 +26,11 @@ public class FizzBuzzTest {
         assertEquals("2",fz.getResult(2));
     }
 
+    @Test
+    void shouldReturnFizzWhen3()
+    {
+        assertEquals("Fizz",fz.getResult(3));
+    }
+
 
 }
