@@ -1,23 +1,29 @@
 package test.java.exo1;
 
 import main.java.exo1.FizzBuzz;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
-
-    FizzBuzz f = new FizzBuzz();
+    
+    FizzBuzz fz ;
+    @BeforeEach
+    void init() 
+    {
+        fz = new FizzBuzz();
+    }
     @Test
     void shouldReturn1When1()
     {
-        assertEquals("1",f.getResult(1));
+        assertEquals("1",fz.getResult(1));
     }
 
     @Test
     void shouldReturn2When2()
     {
-        assertEquals("2",f.getResult(2));
+        assertEquals("2",fz.getResult(2));
     }
 
 
