@@ -51,5 +51,11 @@ public class FizzBuzzTest {
         assertEquals("Buzz",fz.getResult(10));
     }
 
+    @Test
+    void shouldReturnFizzBuzzWhen15()
+    {
+        assertEquals("FizzBuzz",fz.getResult(15));
+    }
+
 
 }
